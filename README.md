@@ -1,2 +1,5 @@
 # LeagueSpread
 League Draft Spreadsheet Java
+
+//League of Legends plays in 2 parts. The first where you select from around 150 characters and the second where you play as those characters on the field of battle. In the 5v5 game there are certain champions that have advantages over others when they fight against each other 1v1. Additionally, certain combinations of characters have advantages over other combinations in the 5v5 fights//
+//The two primary tasks to automate generate the most advantages in the giant rock-paper-scissors game of champion select would be to 1) pull winrate statistics from u.gg based on winrates and games played for the 1v1 phase of the game and 2: categorize the entire cast under a 5 color scheme that marks their position in the rock-paper-scissors of pick and ban and then also categorize the cast by the position they are played. This way, I can determine how my team and the enemy team will probably behave in game by seeing a live display of playstyle colors and also select appropriate counterpicks in order to improve my chances at winning in both pick phase and gameplay phase of League of Legends.//

@@ -1,0 +1,12 @@
+Why do we leave the parenthesis blank after myfunction and fetchfun?
+Why do they need a squiggle after them? To determine a strip that goes inside grammatically?
+Will we be changing the var on line 6? How does one change a variable in js?
+Can stripfribbage only list items when they have spaces between them? What about underscores or other symbols?
+Would typical notes have another // at the end of the note or line normally? I remember the // vs /* section of the book mentioning that those sets of symbols flank the beginning and the end of the comment. Not just the beginning
+How does print work? print (defined_term)?
+
+Describe, in painstaking detail, the steps I want the program to do: 
+1: Fetch u.gg counters page for cell B2 champion name (Aatrox)
+2: List champions horizontally starting in cell H2 in the "best picks vs X champion" section from greatest winrate to lowest. Lowest acceptable winrate is 51%. Any listed counter from "best picks vs X champ" must have at least 200 games played 
+3: After listing each counter within the parameters, go to the u.gg counters page of the next champ on "Champion cast" spreadsheet
+Repeat actions listed in 2

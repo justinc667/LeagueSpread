@@ -1,9 +1,9 @@
-Why do we leave the parenthesis blank after myfunction and fetchfun?
-Why do they need a squiggle after them? To determine a strip that goes inside grammatically?
-Will we be changing the var on line 6? How does one change a variable in js?
-Can stripfribbage only list items when they have spaces between them? What about underscores or other symbols?
+Why do we leave the parenthesis blank after myfunction and fetchfun? In case we want arguments. Also, java does not recognize the syntax unless you write them in
+Why do they need a squiggle after them? To determine a strip that goes inside grammatically? 
+Will we be changing the var on line 6? How does one change a variable in js? Guide recommends using let instead of var as var is outdated. Saw how to chage them
+Can stripfribbage only list items when they have spaces between them? What about underscores or other symbols? Any character has an index value that can be manipulated. Spaces are also counted for other argumes like strip
 Would typical notes have another // at the end of the note or line normally? I remember the // vs /* section of the book mentioning that those sets of symbols flank the beginning and the end of the comment. Not just the beginning
-How does print work? print (defined_term)?
+How does print work? print (defined_term)? print (text/sting/variable/constant); pretty much what I expected
 
 Describe, in painstaking detail, the steps I want the program to do: 
 1: Fetch u.gg counters page for cell B2 champion name (Aatrox)

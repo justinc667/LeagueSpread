@@ -2,7 +2,9 @@ function myFunction() {
   console.log('hello world')
 }
 function fetchCounters(row) {
-  const name = // SEARCH: ... get contents of column B/2 for this row ...;
+  let sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0];
+  let range = sheet.getRange(row,2);
+  let name = range.getValue();
         // https://developers.google.com/apps-script/reference/spreadsheet/range
         // but by row / column number
         // or learn to convert the number 2 in to the string 'B2'
@@ -12,7 +14,9 @@ const body = response.getContentText();
 // console.log('body?', typeof body);
 const data = stripfribbage(body);
 const info = JSON.parse(data)
-Logger.log(info);
+info.name = name
+//Logger.log(info);
+return info
 }
 
 function stripfribbage (str) {
@@ -26,7 +30,21 @@ const parts2 = parts[1].split('window.__APOLLO_STATE')
 return parts2[0]
 }
 
+function isBlank(row) {
+  
+  //get the contents of column 2 of this row
+  //test whether there is anything in it
+  //return the results
+  let sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0];
+  let range = sheet.getRange(row,2);
+  let contents = range.getValue();
+  let empty = contents.length === 0
+  Logger.log(empty)
+  return empty
 
+
+  range.activate();
+}
 function doEverything() {
   let row = 2;
   while (!isBlank(row)) {    
